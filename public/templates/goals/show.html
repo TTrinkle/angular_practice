@@ -1,0 +1,19 @@
+I am on the goal show template
+<h1> {{goal.title}}</h1>
+{{goal.id}}
+{{goal.percent_complete || false}}
+<div ng-repeat='task in tasks'>
+	<ul>
+<li>{{task.content}}
+	<ul>
+<li>Status: {{task.status}}</li>
+<li>Date: {{task.date | date:'MM, dd, yyyy'}}</li></ul></li>
+</ul>
+</div>
+<form ng-submit='submit()' ng-controller='NewTaskCtrl'>
+	<input type='text' name='text'>
+	<input type='submit' name='submit'>
+</form>
+{{list}}
+</div>
+</div>

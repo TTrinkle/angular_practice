@@ -1,4 +1,4 @@
-@restauranteur.controller "RestaurantIndexCtrl", ['$scope', '$location', '$http', ($scope, $location, $http) ->
+@goal_tracker.controller "RestaurantIndexCtrl", ['$scope', '$location', '$http', ($scope, $location, $http) ->
 	$scope.restaurants = []
 	$http.get('./restaurants.json').success((data)->
 		$scope.restaurants = data

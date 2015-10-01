@@ -1,4 +1,4 @@
-@restauranteur.controller('NewTaskCtrl', function($scope, Task) {
+@goal_tracker.controller('NewTaskCtrl', function($scope, Task) {
   $scope.newPost  = new Task();
 
   $scope.save = function() {

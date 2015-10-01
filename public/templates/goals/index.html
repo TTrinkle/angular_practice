@@ -4,6 +4,7 @@
 		<a ng-click='viewGoal(goal.id)'>{{goal.title}}
 		{{goal.percent_complete * 100 | number:0}}%</a>
 	</li>
+	<p ng-click='updatePercentComplete($index)'>+</p>
 </ul>
 
 

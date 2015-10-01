@@ -5,4 +5,6 @@
 	)
 	$scope.viewGoal = (id) ->
 		$location.url "/goals/#{id}"
+	$scope.updatePercentComplete = (index) ->
+		$scope.goals[index].percent_complete += 0.01;
 ]

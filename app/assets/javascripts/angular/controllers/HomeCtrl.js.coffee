@@ -1,3 +1,3 @@
-@restauranteur.controller 'HomeCtrl', ['$scope', ($scope)->
+@goal_tracker.controller 'HomeCtrl', ['$scope', ($scope)->
 	$scope.foo = 'bar']
 

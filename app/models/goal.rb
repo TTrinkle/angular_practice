@@ -3,4 +3,12 @@ class Goal < ActiveRecord::Base
 	belongs_to :user
 
 	validates_presence_of :title
+
+	def xpos
+		rand(0..100)
+	end
+
+	def ypos
+		rand(0..100)
+	end
 end

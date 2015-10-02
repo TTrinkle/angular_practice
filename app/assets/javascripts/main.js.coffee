@@ -10,6 +10,10 @@
         templateUrl: '/templates/goals/show.html',
         controller: 'GoalShowCtrl'
     }).
+    when('/goals/new', {
+        templateUrl: 'templates/goals/new.html',
+        controller: 'GoalsAddCtrl'
+    }).
     otherwise({
       redirectTo: '/'
     }) 

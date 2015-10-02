@@ -1,6 +1,6 @@
 class GoalsController < ApplicationController
-  before_action :set_goal, only: [:show, :edit, :update, :destroy]
-
+  # before_action :set_goal, only: [:show, :edit, :update, :destroy]
+  skip_before_action :verify_authenticity_token
   # GET /goals
   # GET /goals.json
   def index
@@ -24,7 +24,7 @@ class GoalsController < ApplicationController
   # POST /goals
   # POST /goals.json
   def create
-    @goal = Goal.new(goal_params)
+    @goal = Goal.new(params[:title])
 
     respond_to do |format|
       if @goal.save
